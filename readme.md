@@ -5,25 +5,18 @@
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Regression-F7931E.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L1bdAY86OOELi_P0ItoSu4UZ919DrGqZ?usp=sharing)
+
 Análisis integral de factores de estrés y burnout en desarrolladores de software, estructurado en dos fases clave: **Comprensión de Datos (EDA)** y **Modelado Predictivo (Regresión Lineal)**.
 
 ---
 
-##  Tabla de Contenidos
-1. [Resumen del Proyecto](#-resumen-del-proyecto)
-2. [Dataset & Estructura](#-dataset--estructura)
-3. [Fase 1: Análisis Exploratorio de Datos (EDA)](#-fase-1-análisis-exploratorio-de-datos-eda)
-4. [Fase 2: Regresión Lineal (Predicción de Estrés)](#-fase-2-regresión-lineal-predicción-de-estrés)
-5. [Principales Hallazgos](#-principales-hallazgos)
-6. [Instalación y Uso](#-instalación-y-uso)
-7. [Autor / Contribución](#-autor--contribución)
-
----
 
 ##  Resumen del Proyecto
 
 Este repositorio contiene un Jupyter Notebook detallado que investiga cómo los hábitos diarios, el contexto laboral y las variables demográficas impactan en el **nivel de estrés** (`stress_level`, escala continua de 0 a 100) y la **categoría de burnout** (`burnout_level`: Low, Medium, High) de los ingenieros de software.
 
+
+* [[LINK COLAB DEL PROYECTO)](https://colab.research.google.com/drive/1L1bdAY86OOELi_P0ItoSu4UZ919DrGqZ)]
 ---
 
 ##  Dataset & Estructura
