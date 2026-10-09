@@ -1,22 +1,38 @@
-#  Análisis de Burnout en Desarrolladores de Software
+<p align="center">
+  <img src="ISPC_portada.png" alt="Portada institucional del ISPC" width="100%">
+</p>
+
+# Análisis de Burnout en Desarrolladores de Software
+
+**Institución:** Instituto Superior Politécnico Córdoba (ISPC)
+
+**Materia:** Desarrollo de Inteligencia Artificial - TSDS - 2026
+
+## Equipo ProCoders
+
+* Daniel Nicolás Paez
+* Juan Pablo Sánchez Brandán
+* Juan Ignacio Gioda
+* Francisco Toro
+* Nahuel Argandoña
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458.svg)](https://pandas.pydata.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Regression-F7931E.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L1bdAY86OOELi_P0ItoSu4UZ919DrGqZ?usp=sharing)
-Análisis integral de factores de estrés y burnout en desarrolladores de software, estructurado en dos fases clave: **Comprensión de Datos (EDA)** y **Modelado Predictivo (Regresión Lineal)**.
+Análisis integral de factores de estrés y burnout en desarrolladores de software. El proyecto aborda la **comprensión de los datos y el Análisis Exploratorio de Datos (EDA)** y el **modelado predictivo mediante regresión lineal**.
 
 ---
 
 ##  Tabla de Contenidos
 1. [Resumen del Proyecto](#-resumen-del-proyecto)
 2. [Dataset & Estructura](#-dataset--estructura)
-3. [Fase 1: Análisis Exploratorio de Datos (EDA)](#-fase-1-análisis-exploratorio-de-datos-eda)
-4. [Fase 2: Regresión Lineal (Predicción de Estrés)](#-fase-2-regresión-lineal-predicción-de-estrés)
+3. [Fase 1: Comprensión de los datos y EDA](#-fase-1-comprensión-de-los-datos-y-eda)
+4. [Fase 2: Modelado y evaluación](#-fase-2-modelado-y-evaluación)
 5. [Principales Hallazgos](#-principales-hallazgos)
 6. [Instalación y Uso](#-instalación-y-uso)
-7. [Autor / Contribución](#-autor--contribución)
+7. [Equipo ProCoders](#equipo-procoders)
 
 ---
 
@@ -51,9 +67,15 @@ Este repositorio contiene un Jupyter Notebook detallado que investiga cómo los 
 
 ---
 
-##  Fase 1: Análisis Exploratorio de Datos (EDA)
+##  Fase 1: Comprensión de los datos y EDA
 
-En esta fase se examinan las distribuciones univariadas, las estadísticas descriptivas y la integridad de los datos.
+En esta fase se comprende la estructura del dataset, se revisa la calidad de los datos y se exploran las distribuciones y relaciones entre variables. La identificación inicial de tipos queda organizada así:
+
+* **Variables numéricas (11):** `age`, `experience_years`, `daily_work_hours`, `sleep_hours`, `caffeine_intake`, `bugs_per_day`, `commits_per_day`, `meetings_per_day`, `screen_time`, `exercise_hours` y `stress_level`.
+* **Variable categórica ordinal (1):** `burnout_level`, con las categorías `Low`, `Medium` y `High`.
+* **Variables objetivo posibles:** `stress_level` para regresión y `burnout_level` para clasificación.
+
+El EDA incluye estadísticas descriptivas, histogramas con curvas de densidad para explorar las variables numéricas, un análisis de frecuencias para `burnout_level` y una matriz de correlación visualizada con un mapa de calor. Estas visualizaciones ayudan a detectar distribuciones, desequilibrios entre categorías y asociaciones iniciales entre hábitos, carga laboral, estrés y burnout; son hallazgos exploratorios y no implican causalidad.
 
 * **Estadísticas Descriptivas Clave:**
   * **Edad promedio:** ~32.1 años (Rango: 20 – 44).
@@ -68,12 +90,27 @@ En esta fase se examinan las distribuciones univariadas, las estadísticas descr
 
 ---
 
-##  Fase 2: Regresión Lineal (Predicción de Estrés)
+##  Fase 2: Modelado y evaluación
 
-El objetivo central de la regresión es modelar la variable continua `stress_level` en función de las métricas de hábitos de vida y carga laboral. 
+La consigna propone que equipos de **2 a 6 integrantes** implementen un modelo de regresión o clasificación que responda al problema definido y a las conclusiones del EDA. En este proyecto se trabaja con **regresión lineal** para predecir la variable continua `stress_level` a partir de las variables de hábitos y contexto laboral.
 
-* **Preprocesamiento:** Limpieza de registros nulos con `dropna()` para garantizar la estabilidad de la matriz de diseño.
-* **Evaluación de Métricas:** (Incorpora coeficientes de regresión, $R^2$ y error cuadrático medio para cuantificar la influencia de variables como horas de sueño, carga horaria y reuniones diarias sobre el estrés).
+### Modelado y entrenamiento
+
+* Se separan los datos en conjuntos de entrenamiento (`train`) y prueba (`test`); el notebook reserva el 20 % para prueba.
+* El algoritmo se ajusta utilizando únicamente el conjunto de entrenamiento.
+* Para el modelado se filtran los registros incompletos con `dropna()`.
+
+### Evaluación de desempeño
+
+Se generan predicciones sobre el conjunto de prueba para estimar cómo responde el modelo ante datos no usados durante el entrenamiento. Para la regresión se calculan e interpretan:
+
+* **MAE:** error absoluto medio.
+* **MSE/RMSE:** error cuadrático medio y su raíz.
+* **R²:** proporción de variabilidad de la variable objetivo explicada por el modelo.
+
+Si se opta por un problema de clasificación usando `burnout_level` como objetivo, las métricas correspondientes son la **matriz de confusión, Accuracy, Precision, Recall y F1-score**.
+
+> **Alcance de esta evidencia:** la optimización final del modelo, el ajuste fino de parámetros y los detalles que queden pendientes se abordarán en la **Tercera Evidencia**.
 
 ---
 
@@ -106,10 +143,3 @@ El objetivo central de la regresión es modelar la variable continua `stress_lev
    ```
 
 ---
-
-## 👥 Autor / Contribución
-
-Desarrollado como parte del proyecto de análisis de datos de salud ocupacional en tecnología. ¡Las contribuciones, issues y pull requests son bienvenidos!
-
----
-*Licencia MIT © 2026*
