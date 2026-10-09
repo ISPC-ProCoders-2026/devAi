@@ -27,13 +27,14 @@ Análisis integral de factores de estrés y burnout en desarrolladores de softwa
 ---
 
 ##  Tabla de Contenidos
-. [Resumen del Proyecto](#-resumen-del-proyecto)
-. [Dataset & Estructura](#-dataset--estructura)
-. [Fase 1: Comprensión de los datos y EDA](#-fase-1-comprensión-de-los-datos-y-eda)
-. [Fase 2: Modelado y evaluación](#-fase-2-modelado-y-evaluación)
-. [Fase 3: Optimizacion y Principales Hallazgos](#-principales-hallazgos)
-. [Instalación y Uso](#-instalación-y-uso)
-. [Equipo ProCoders](#equipo-procoders)
+1. [Equipo ProCoders](#equipo-procoders)
+2. [Resumen del Proyecto](#-resumen-del-proyecto)
+3. [Dataset & Estructura](#-dataset--estructura)
+4. [Fase 1: Comprensión de los datos y EDA](#-fase-1-comprensión-de-los-datos-y-eda)
+5. [Fase 2: Modelado y evaluación](#-fase-2-modelado-y-evaluación)
+6. [Fase 3: Optimizacion y Principales Hallazgos](#-principales-hallazgos)
+7. [Instalación y Uso](#-instalación-y-uso)
+
 
 ---
 
