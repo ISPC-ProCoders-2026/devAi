@@ -21,7 +21,6 @@
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Regression-F7931E.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L1bdAY86OOELi_P0ItoSu4UZ919DrGqZ?usp=sharing)
-<<<<<<< HEAD
 Análisis integral de factores de estrés y burnout en desarrolladores de software. El proyecto aborda la **comprensión de los datos y el Análisis Exploratorio de Datos (EDA)** y el **modelado predictivo mediante regresión lineal**.
 
 ---
@@ -36,13 +35,6 @@ Análisis integral de factores de estrés y burnout en desarrolladores de softwa
 7. [Equipo ProCoders](#equipo-procoders)
 
 ---
-=======
-
-Análisis integral de factores de estrés y burnout en desarrolladores de software, estructurado en dos fases clave: **Comprensión de Datos (EDA)** y **Modelado Predictivo (Regresión Lineal)**.
-
----
-
->>>>>>> 0fef16a2a278482439c4f289886d9f3ce84fcc6b
 
 ##  Resumen del Proyecto
 
@@ -153,13 +145,3 @@ Si se opta por un problema de clasificación usando `burnout_level` como objetiv
    ```
 
 ---
-<<<<<<< HEAD
-=======
-
-## 👥 Autor / Contribución
-
-Desarrollado como parte del proyecto de análisis de datos de salud ocupacional en tecnología. ¡Las contribuciones, issues y pull requests son bienvenidos!
-
----
-*Licencia MIT © 2026*
->>>>>>> 0fef16a2a278482439c4f289886d9f3ce84fcc6b
