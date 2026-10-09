@@ -21,6 +21,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Regression-F7931E.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L1bdAY86OOELi_P0ItoSu4UZ919DrGqZ?usp=sharing)
+
 Análisis integral de factores de estrés y burnout en desarrolladores de software. El proyecto aborda la **comprensión de los datos y el Análisis Exploratorio de Datos (EDA)** y el **modelado predictivo mediante regresión lineal**.
 
 ---
