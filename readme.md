@@ -25,7 +25,7 @@
 ---
 
 * [Link Colab del Proyecto](https://colab.research.google.com/drive/1YymcGoV2PEVJPE0hnplOqUVwzwjEbHqb?usp=sharing)
-* [Link del Modelo ABP - Pendiente]()
+* [Link del Modelo ABP](https://docs.google.com/document/d/1hVy1IcTM0J3o7KHr_qGLWGIWzcVqK-Vi/edit?usp=sharing&ouid=106205882444738303879&rtpof=true&sd=true)
 
 
 ## ¿De qué trata el proyecto?
