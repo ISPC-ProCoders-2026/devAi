@@ -110,6 +110,11 @@ Se abre el navegador con la lista de archivos. Hacer clic en `burnout_analysis.i
 
 > Si el CSV no está en la misma carpeta que el notebook, la lectura de datos va a fallar. Tiene que estar ahí.
 
+## Widget en el Colab (No hemos subido a producción)
+Como no hemos subido a producción el modelo, hemos decidido agregar un widget en la ultima celda del Colab para poder predecir con nuevos valores, imagen de prueba:
+<img width="831" height="361" alt="image" src="https://github.com/user-attachments/assets/76f5ad0a-1a0f-4810-967e-7684ed13c535" />
+
+
 ## Reflexión del grupo
 
 Estamos muy contentos de haber cursado esta materia. Aprendimos muchas cosas que no conocíamos, desde cómo preparar los datos hasta cómo interpretar un modelo y sacar conclusiones de él. Todavía nos cuesta entenderlo del todo, pero es un tema que nos gustó, y pensamos seguir profundizando en él en el futuro.
